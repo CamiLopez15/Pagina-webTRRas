@@ -1,0 +1,114 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8ebcd;
+}
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+h2 {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+h4 {
+  font-size: 18px;
+  color: #ff650c;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 350px;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.info-box {
+  flex: 1;
+  background: #e0ba8f;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: none; /* Oculto al inicio */
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.info-box h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.info-box p {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #444;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Zigzag: alterna posición de imagen e info */
+.card-container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+
+footer {
+  background: #ffd9ab;
+  color: #2c2b2b;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}

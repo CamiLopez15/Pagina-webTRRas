@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flujo de Memoria del Molino de Maíz</title>
+    <link rel="stylesheet" href="FlujoMemoria.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Cargar el header desde Header.html
+        $('#header').load('Header.html');
+        // Cargar el footer desde footer.html
+        $('footer').load('footer.html');
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <h1>Flujo de Memoria del Molino de Maíz</h1>
+    <h2>
+      El Molino de Maíz es un espacio cargado de memoria colectiva y simbolismo
+      cultural. Funciona como un lugar donde el tiempo parece superponerse:
+      pasado, presente y futuro se entrelazan en la acción cotidiana de moler el
+      grano. El sonido repetitivo de las piedras y el olor del maíz remiten a
+      las prácticas ancestrales que han acompañado a las comunidades durante
+      generaciones.  </h2>
+
+      <h4>Oprime cada imagen para conocer más sobre la historia del molino de maíz.
+  </h4> 
+    <main>
+    <div class="grid" id="memoryGrid"></div>
+
+    <script>
+      const memoria = [
+        {
+          titulo: "Orígenes Ancestrales (Época Prehispánica)",
+          imagen:
+            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
+          descripcion:
+            "El maíz fue considerado un alimento sagrado en muchas culturas indígenas de Colombia como los muíscas, quimbayas y zenúes. Su molienda no era un simple acto culinario, sino un proceso cargado de ritualidad. Se utilizaban piedras llamadas metates o piedras de moler, donde las manos de las mujeres transformaban los granos en masa, en un ejercicio que unía lo cotidiano con lo espiritual. Este acto, acompañado de cantos y oraciones, reforzaba la conexión de las comunidades con la tierra y con sus dioses, marcando el inicio de la memoria del molino como símbolo cultural.",
+        },
+        {
+          titulo: "Periodo Colonial (Siglos XVI - XVIII)",
+          imagen:
+            "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
+          descripcion:
+            "Con la llegada de los españoles, el molino manual comenzó a transformarse. A las piedras indígenas se sumaron los primeros molinos de hierro y manivela, traídos desde Europa, que ofrecían mayor rapidez y practicidad. El molino pasó a ocupar un lugar esencial en la vida doméstica, convirtiéndose en un objeto cotidiano en los hogares campesinos. Además de su función práctica, representaba el mestizaje cultural, pues en él se unían las técnicas ancestrales con las innovaciones coloniales.",
+        },
+        {
+          titulo: "Siglo XIX – Principios del XX",
+          imagen:
+            "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
+          descripcion:
+            "Durante esta etapa, los molinos de mayor escala, movidos por fuerza animal o por agua, empezaron a instalarse en haciendas y pequeños pueblos. Estos espacios se convirtieron en puntos de encuentro comunitario: allí no solo se transformaba el maíz en harina, sino que también se compartían noticias, historias y canciones. El molino adquirió un valor social, funcionando como centro de reunión popular. El maíz, por su parte, se consolidó como la base de la alimentación cotidiana, dando vida a preparaciones tradicionales como la arepa, la mazamorra y los envueltos.",
+        },
+        {
+          titulo: "Mediados del Siglo XX (Industrialización)",
+          imagen:
+            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+          descripcion:
+            "Con la industrialización, surgieron los molinos eléctricos y mecánicos en las zonas urbanas, lo que transformó radicalmente la relación con el maíz. Se desarrollaron fábricas de harina precocida que facilitaron la preparación de alimentos, pero a la vez desplazaron el uso cotidiano del molino manual en muchos hogares. Aun así, en las zonas rurales se mantuvo la tradición de moler a mano, preservando el molino como símbolo de trabajo comunitario y de identidad cultural frente a los cambios de la modernidad.",
+        },
+        {
+          titulo: "Finales del Siglo XX – Actualidad",
+          imagen:
+            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+          descripcion:
+            "Hoy en día, el molino de maíz se conserva en comunidades rurales como un objeto patrimonial cargado de memoria. En los entornos urbanos ha pasado de ser un artefacto de uso cotidiano a convertirse en pieza de exhibición en museos, ferias y festivales gastronómicos, donde se reivindica como símbolo de tradición. El acto de moler, aunque menos común en la vida diaria, ha cobrado un valor simbólico, al punto de representar resistencia cultural y orgullo por las raíces campesinas y culinarias.",
+        },
+        {
+          titulo: "Proyección Futura",
+          imagen:
+            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+          descripcion:
+            "En el presente y hacia el futuro, el molino se proyecta como un narrador de historias y memorias colectivas. Su figura es reinterpretada a través de medios digitales, museos y proyectos transmedia, que buscan rescatar su relevancia como patrimonio inmaterial. Así, el molino deja de ser solo un objeto funcional para convertirse en puente entre generaciones, manteniendo viva la herencia del maíz y de la identidad cultural colombiana.",
+        },
+      ];
+
+      const grid = document.getElementById("memoryGrid");
+
+      memoria.forEach((item, idx) => {
+        const container = document.createElement("div");
+        container.className = "card-container";
+
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `<img src="${item.imagen}" alt="${item.titulo}">`;
+
+        const infoBox = document.createElement("div");
+        infoBox.className = "info-box";
+        infoBox.innerHTML = `
+        <h3>${item.titulo}</h3>
+        <p>${item.descripcion}</p>
+      `;
+
+        // Al hacer clic en la imagen, se muestra el cuadro
+        card.addEventListener("click", () => {
+          infoBox.style.display = "block";
+        });
+
+        container.appendChild(card);
+        container.appendChild(infoBox);
+        grid.appendChild(container);
+      });
+    </script>
+    </main>
+    <footer>&copy; 2025 El molino de mi abuela. Todos los derechos reservados a María Camila López.</footer>
+  </body>
+  </body>
+</html>

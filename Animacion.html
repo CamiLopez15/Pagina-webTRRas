@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de la Animación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Animacion.css">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Cargar el header desde Header.html
+        $('#header').load('Header.html');
+        // Cargar el footer desde footer.html
+        $('footer').load('footer.html');
+      });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <h1>Animación Molino de mi abuela</h1>
+        <div class="descripcion">
+            Bienvenido al inicio de nuestra animación transmedia. Aquí podrás ver una breve descripción y el video introductorio que muestra el concepto y la creatividad detrás de nuestro proyecto.
+        </div>
+        <video controls>
+            <source src="animacion.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+    <footer>&copy; 2025 El molino de mi abuela. Todos los derechos reservados a María Camila López.</footer>
+  </body>
+</body>
+</html>
