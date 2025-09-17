@@ -7,7 +7,7 @@ body {
 h1 {
   font-size: 50px;
   text-align: center;
-  margin-top: 0;
+  margin-top: 10px;
 }
 h2 {
   font-size: 30px;
@@ -28,7 +28,8 @@ p {
 li {
   color: #000000;
   text-decoration: none;
-  text-align: center;
+  text-align: justify;
+   font-size: 20px;
 }
 main {
   text-align: center;
@@ -40,23 +41,6 @@ main {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.download-btn {
-  text-align: center;
-  display: block;
-  padding: 15px 30px;
-  background: #007acc;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  font-size: 18px;
-  margin: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
-  transition: background 0.3s;
-}
-.download-btn:hover {
-  background: #005a9e;
-}
 
 /* Imagen a la izquierda */
 .instructions-img {
@@ -79,6 +63,38 @@ main {
   margin-top: 20px;
 }
 
+/*Ultima parte*/
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /* espacio entre cuadros */
+  margin: 40px;
+}
+
+.card {
+  background-color: #ffd9ab;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 400px; /* tamaño de cada cuadro */
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 18px;
+  background-color: #0078d7;
+  color: #ffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background-color: #005fa3;
+}
 
 footer {
   background: #ffd9ab;
