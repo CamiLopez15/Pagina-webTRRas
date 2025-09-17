@@ -1,51 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Videojuego</title>
-  <link rel="stylesheet" href="VideoJuego.css">
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
+    <link rel="stylesheet" href="VideoJuego.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
       $(document).ready(function () {
         // Cargar el header desde Header.html
-        $('#header').load('Header.html');
+        $("#header").load("Header.html");
         // Cargar el footer desde footer.html
-        $('footer').load('footer.html');
+        $("footer").load("footer.html");
       });
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="header"></div>
-<div class="container">
-    <h1>Videojuego</h1>
-    <section class="game-instructions">
-        <h2>OBJETIVO</h2>
-        <p>Tu misión es simple: atrapar 100 maíces para ganar la partida. ¿Crees que puedes lograrlo?</p>
-        <h2>COMO JUGAR</h2>
-        <p><strong>Movimiento:</strong> Usa las flechas de tu teclado (izquierda y derecha) o letra A y D.</p>
-        <p><strong>Anotación:</strong> Cada maíz que atrapes te suma 1 punto. ¡Intenta no dejar escapar ni uno!</p>
-        <h2>CUIDADO CON LAS TRAMPAS</h2>
-        <p>Tienes 3 vidas en total. Cada vez que cometas un error, perderás una.</p>
-        <p>No dejes caer maíces: Si un maíz toca el suelo sin que lo atrapes, pierdes 1 vida.</p>
-        <p>¡Cuidado con las pepas! En el camino, podrías ver algunas pepas. ¡No las atrapes! Si atrapas una pepa, pierdes 1 vida.</p>
-    </section>
-</div>
+    <div class="container">
+      <h1>Videojuego del Molino de Maíz</h1>
+      <main>
+        <section class="game-instructions">
+          <h2>OBJETIVO</h2>
+          <p>
+            Tu misión es simple: atrapar 100 maíces para ganar la partida.
+            ¿Crees que puedes lograrlo?
+          </p>
 
-<h1>🎮 Descargar GameCamTrans</h1>
-    <p>Haz clic en el botón para descargar el juego:</p>
+          <section class="game-instructions2">
+            <img
+              src="Imagenes/Intrucciones.png"
+              alt="Molino de MAIZ Juego"
+              class="instructions-img"
+            />
+            <div class="instructions-text">
+              <h2>COMO JUGAR</h2>
+              <p>
+                <strong>Movimiento:</strong> Usa las flechas de tu teclado
+                (izquierda y derecha) o letra A y D.
+              </p>
+              <p>
+                <strong>Anotación:</strong> Cada maíz que atrapes te suma 1
+                punto. ¡Intenta no dejar escapar ni uno!
+              </p>
+            </div>
+          </section>
+          <section class="game-instructions3">
+            <div class="instructions-text2">
+          <h2>CUIDADO CON LAS TRAMPAS</h2>
+          <p>
+            Tienes 3 vidas en total. Cada vez que cometas un error, perderás
+            una.
+          </p>
+          <p>
+            No dejes caer maíces: Si un maíz toca el suelo sin que lo atrapes,
+            pierdes 1 vida.
+          </p>
+          <p>
+            ¡Cuidado con las pepas! En el camino, podrías ver algunas pepas. ¡No
+            las atrapes! Si atrapas una pepa, pierdes 1 vida.
+          </p>
+          </div>
+          <img
+              src="Imagenes/jUEGO2.png"
+              alt="Molino de MAIZ Juego"
+              class="instructions-img"
+            />
+        </section>
 
-    <!-- ENLACE DIRECTO A TU ARCHIVO -->
-    <a href="Juego Final.zip" class="download-btn">
-        ⬇️ Descargar El molino de mi abuela para Windows
-    </a>
-    
-    <h3>📝 Instrucciones de Instalación</h3>
-    <ol>
-        <li>Descarga el archivo ZIP</li>
-        <li>Descomprímelo en una carpeta</li>
-        <li>Ejecuta <strong>GameCamTrans.exe</strong></li>
-        <li>¡Disfruta del juego!</li>
-    </ol>
-    <footer>&copy; 2025 El molino de mi abuela. Todos los derechos reservados a María Camila López.</footer>
-</body>
+        <h2>🎮 Descargar El molino de mi abuela</h2>
+        <p>Haz clic en el botón para descargar el juego:</p>
+
+        <a href="Juego Final.zip" class="download-btn">
+          ⬇️ Descargar El molino de mi abuela para Windows
+        </a>
+
+        <h3>📝 Instrucciones de Instalación</h3>
+        <ol>
+          <li>Descarga el archivo ZIP</li>
+          <li>Descomprímelo en una carpeta</li>
+          <li>Ejecuta <strong>GameCamTrans.exe</strong></li>
+          <li>¡Disfruta del juego!</li>
+        </ol>
+      </main>
+    </div>
+
+    <footer>
+      &copy; 2025 El molino de mi abuela. Todos los derechos reservados a María
+      Camila López.
+    </footer>
+  </body>
 </html>
