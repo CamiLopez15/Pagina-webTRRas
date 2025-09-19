@@ -24,15 +24,18 @@ h2 {
   text-align: center;
   margin-top: 0;
 }
-
+.Titulo p {
+  font-size: 20px;
+  text-align: center;
+}
 h3 {
   font-size: 25px;
-  text-align: center;
+  text-align: justify;
   margin-top: 0;
 }
 p {
   font-size: 20px;
-  text-align: center;
+  text-align: justify;
 }
 img {
   max-width: 350px;
