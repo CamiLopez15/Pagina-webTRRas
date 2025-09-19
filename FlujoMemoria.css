@@ -31,6 +31,7 @@ h3 {
   margin: 20px auto;
   max-width: 800px;
 }
+
 main {
   text-align: center;
   max-width: 1000px;
@@ -45,21 +46,19 @@ main {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-width: 900px;
-  margin: auto;
 }
 
 .card-container {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 90px;
 }
 
 .card {
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 200px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -80,7 +79,7 @@ main {
   background: #eec89e;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 px 15px rgba(0, 0, 0, 0.1);
   display: none; /* Oculto al inicio */
   animation: fadeIn 0.4s ease-in-out;
 }
@@ -92,8 +91,9 @@ main {
 
 .info-box p {
   margin-top: 10px;
-  font-size: 0.95em;
+  font-size: 18px;
   color: #444;
+  text-align: justify;
 }
 
 /* Animación */
