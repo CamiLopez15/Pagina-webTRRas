@@ -31,6 +31,15 @@ h3 {
   margin: 20px auto;
   max-width: 800px;
 }
+main {
+  text-align: center;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #a3773ea9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
 .grid {
   display: flex;
@@ -68,7 +77,7 @@ h3 {
 
 .info-box {
   flex: 1;
-  background: #e0ba8f;
+  background: #eec89e;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -98,12 +107,6 @@ h3 {
     transform: translateX(0);
   }
 }
-
-/* Zigzag: alterna posición de imagen e info */
-.card-container:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
 
 footer {
   background: #ffd9ab;
