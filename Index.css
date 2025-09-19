@@ -24,17 +24,24 @@ h2 {
   text-align: center;
   margin-top: 0;
 }
-
+.Titulo p {
+  font-size: 20px;
+  text-align: center;
+}
 h3 {
   font-size: 25px;
   text-align: justify;
+<<<<<<< HEAD
   margin-top: 0;
 }
 .intro p {
   font-size: 22px;
   text-align: center;
+=======
+>>>>>>> 2fdd687e66a77ed60f24457d071cc9948b1fe9a4
   margin-top: 0;
 }
+
 p {
   font-size: 20px;
   text-align: justify;
