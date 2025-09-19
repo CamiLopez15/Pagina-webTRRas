@@ -27,12 +27,17 @@ h2 {
 
 h3 {
   font-size: 25px;
+  text-align: justify;
+  margin-top: 0;
+}
+.intro p {
+  font-size: 22px;
   text-align: center;
   margin-top: 0;
 }
 p {
   font-size: 20px;
-  text-align: center;
+  text-align: justify;
 }
 img {
   max-width: 350px;
