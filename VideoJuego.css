@@ -10,7 +10,7 @@ h1 {
   margin-top: 10px;
 }
 h2 {
-  font-size: 25px;
+  font-size: 27px;
   text-align: justify;
   margin-top: 3PX;
 }
@@ -19,6 +19,10 @@ h3 {
   font-size: 25px;
   text-align: center;
   margin-top: 0;
+}
+strong {
+  font-size: 23px;
+  text-align: center;
 }
 p {
   font-size: 20px;
@@ -69,9 +73,8 @@ main {
 .container2 {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   gap: 50px; /* espacio entre cuadros */
-  margin: 40px;
+  margin-top: 40px;/*mirar*/
 }
 
 .card {
@@ -86,15 +89,16 @@ main {
   display: inline-block;
   margin-top: 10px;
   padding: 12px 18px;
-  background-color: #0078d7;
-  color: #ffff;
+  background-color: #998eda;
+  color: #181717;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
 }
 
 .download-btn:hover {
-  background-color: #005fa3;
+  background-color: #384c78;
+  color: #ffffff;
 }
 
 footer {
