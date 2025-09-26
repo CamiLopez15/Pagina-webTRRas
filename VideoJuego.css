@@ -70,13 +70,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px; /* espacio entre cuadros */
+  gap: 50px; /* espacio entre cuadros */
   margin: 40px;
 }
 
 .card {
-  background-color: #ffd9ab;
-  padding: 20px;
+  background-color: #cddbf7;
+  padding: 37px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   width: 400px; /* tamaño de cada cuadro */
