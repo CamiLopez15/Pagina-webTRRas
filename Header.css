@@ -3,7 +3,7 @@ body {
 font-family: 'Gill Sans Ultra Bold', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
 }
 header {
-  background: #ffd9ab; /* amarillo gallta */
+  background: #cddbf7; /* amarillo gallta */
   display: flex;
   align-items: center;
   justify-content: center; /* centra horizontalmente */
