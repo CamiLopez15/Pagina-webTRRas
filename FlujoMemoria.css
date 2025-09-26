@@ -5,19 +5,20 @@ body {
   background: #f7ebcd;
 }
 
-  h1 {
+h1 {
     font-size: 50px;
     text-align: center;
     margin-bottom: 40px;
   }
 h2 {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
+  text-align: justify;
   margin: 20px auto;
-  max-width: 800px;
+  max-width: 1050px;
 }
 h4 {
-  font-size: 18px;
+  font-size: 20px;
   color: #ff650c;
   text-align: center;
   margin: 20px auto;
