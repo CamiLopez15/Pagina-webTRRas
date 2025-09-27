@@ -1,45 +1,41 @@
 body {
   margin: 0;
-font-family: 'Gill Sans Ultra Bold', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  font-family: "Gill Sans Ultra Bold", "Gill Sans", "Gill Sans MT", Calibri,
+    sans-serif;
 }
 header {
-  background: #8494b8; /* amarillo gallta */
   display: flex;
+  justify-content: center; /* Logo a la izquierda, menú a la derecha */
   align-items: center;
-  justify-content: center; /* centra horizontalmente */
-  padding: 15px 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: #6c7a9c; /* el color que tienes */
+  padding: 10px 20px;
 }
+
 nav {
   display: flex;
-  gap: 30px;
-}
-nav a {
-  justify-content: center;
+  gap: 10px;
   align-items: center;
+}
+
+/* Logo */
+.logo img {
+  display: flex;
+  height: 70px; /* ajusta tamaño del logo */
+  cursor: pointer;
+}
+
+nav a {
+  margin: 0 25px;
   text-decoration: none;
-  color: #000000;
+  color: black;
+  font-weight: bold;
   font-size: 20px;
-  transition: color 0.2s;
-  padding: 0 15px;
-  border-right: 2px solid #9e774a; /* línea amarilla gallta */
+  padding: 0 5px;
+  border-right: 2px solid #020069; /* línea amarilla gallta */
+  border-left: 2px solid #020069;
 }
-
-nav a:last-child {
-  border-right: none; /* Quita la línea al último enlace */
-}
-
 nav a:hover {
   color: #8508d8;
-}
-.social {
-  display: flex;
-  gap: 15px;
-}
-.social a {
-  color: #8508d8;
-  font-size: 1.3em;
-  transition: color 0.2s;
 }
 
 @keyframes spin {
