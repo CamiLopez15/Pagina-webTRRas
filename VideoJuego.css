@@ -1,10 +1,10 @@
-li {
-  color: #000000;
-  text-decoration: none;
-  text-align: justify;
-   font-size: 20px;
-}
 
+li, ol{
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: justify;
+  align-content: center;
+}
 /* Main */
 
 /* Secciones de instrucciones */
@@ -75,39 +75,64 @@ strong {
 /*Ultima parte*/
 
 .container2 {
-   margin: 2rem auto;
-  background: #fffd9e;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
-  gap: 50px; /* espacio entre cuadros */
-  margin-top: 40px;/*mirar*/
+  justify-content: center;   /* centra las tarjetas */
+  align-items: stretch;
+ flex-direction: row;     /* evita que se estiren verticalmente */
+  gap: 30px;                 /* espacio entre tarjetas */
+  flex-wrap: wrap;           /* en pantallas pequeñas se apilan */
+  margin-top: 40px;
 }
 
 .card {
-  background-color: #cddbf7;
-  padding: 37px;
+  background-color: #00e6c5;
+  padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   width: 400px; /* tamaño de cada cuadro */
+  align-items: center;
+}
+.card ol{
+  margin: 0;                /* elimina márgenes externos que deforman */
+  padding-left: 20px;       /* deja espacio para los números */
+  text-align: left;         /* texto alineado a la izquierda */
+  list-style-position: outside; /* asegura que el número quede afuera */
+  line-height: 1.8;         /* más espacio entre líneas */
+}
+
+.resaltado {
+  font-weight: bold;
+  color: #3a2d1d; /* café oscuro, puedes cambiarlo */
+}
+
+
+.card ol li {
+  margin-bottom: 8px;       /* separación entre ítems */
+}
+
+
+card h3 {
+  margin-top: 0;
+  font-size: 24px;
+  text-align: center;
 }
 
 .download-btn {
-  display: inline-block;
+  display: flex;
   margin-top: 10px;
   padding: 12px 18px;
-  background-color: #998eda;
+  background-color: #77f7a4;
   color: #181717;
   text-decoration: none;
+  justify-content: center;
+  text-align: center;
   border-radius: 8px;
   font-weight: bold;
 }
 
 .download-btn:hover {
-  background-color: #384c78;
-  color: #ffffff;
+  background-color: #dfff9f;
+  color: #000;
 }
 
 footer {
