@@ -15,14 +15,17 @@ main {
 }
 
 /* Secciones de instrucciones */
+/* Secciones de instrucciones en columna */
 .game-instructions2,
 .game-instructions3 {
   display: flex;
+  flex-direction: column; /* coloca los elementos uno debajo del otro */
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   margin-bottom: 2rem;
 }
+
 
 /* Texto */
 .instructions-text,
