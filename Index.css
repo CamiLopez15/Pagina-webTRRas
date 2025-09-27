@@ -2,14 +2,13 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 0;
   padding: 0;
-  background: #f7ebcd;
+  background: #fdf8c6;
 }
 
 main {
   text-align: center;
-  max-width: 1000px;
   margin: 2rem auto;
-  background: #d69540a9;
+  background: #fffd9e;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -23,33 +22,44 @@ h1 {
 h2 {
   font-size: 30px;
   text-align: center;
-  margin-top: 0;
+  margin-top: 0;  
+  margin: 2rem auto;
 }
 
+.introduccion{
+  text-align: center;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
 .Titulo h2 {
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
   margin-top: 30px;
 }
 h3 {
   font-size: 25px;
+  text-align: center;
   text-align: justify;
-  margin-top: 0;
+  max-width: 1000px;
+  margin: 2rem auto;
 }
 
 .intro p {
-  font-size: 22px;
+  font-size: 25px;
   text-align: center;
   margin-top: 0;
 }
 
 p {
-  font-size: 20px;
+  font-size: 25px;
+  text-align: center;
   text-align: justify;
+  max-width: 1000px;
+  margin: 2rem auto;
 }
 .banner {
   padding: 10px; /* espacio entre el degradado y la imagen */
-  background: linear-gradient(90deg,#CDDBF7, #01caee, #384C78);
+  background: linear-gradient(180deg,#00ddffc5, #dfff9f, #fffd9e);
 }
 .banner img {
   width: 90%; /* la haces más grande, prueba 100% si quieres que ocupe todo */
@@ -67,16 +77,29 @@ img {
 .molinos-grid {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 90px;
   margin-top: 2rem;
 }
 
+.molinos-grid1 {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  margin-top: 2rem;
+}
+
+.tipos{
+text-align: center;
+  max-width: 1000px;
+  margin: 2rem auto;
+
+}
 .molino-card {
-  background: #cddbf7;
+  background: #77f7a4;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  width: 180px;
-  height: 220px;
+  width: 280px;
+  height: 330px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,14 +108,14 @@ img {
 
 .molino-card h3 {
   margin: 0 0 10px 0;
-  font-size: 1.1em;
+  font-size: 30px;
   text-align: center;
   color: #000000;
 }
 
 .molino-card img {
-  width: 190px;
-  height: 190px;
+  width: 290px;
+  height: 290px;
   justify-content: center;
   border-radius: 8px;
 }
@@ -103,3 +126,10 @@ footer {
   padding: 1rem 0;
   margin-top: 2rem;
 }
+
+
+/*.color1 {color: #00dfff;}
+.color2 {color: #00e6c5;}
+.color3 {color: #77f7a4;}
+.color4 {color: #dfff9f;}
+.color5 {color: #fffd9e;}*/

@@ -7,7 +7,7 @@ header {
   display: flex;
   justify-content: center; /* Logo a la izquierda, menú a la derecha */
   align-items: center;
-  background-color: #6c7a9c; /* el color que tienes */
+  background-color: #00cfb0; /* el color que tienes */
   padding: 10px 20px;
 }
 
