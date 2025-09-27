@@ -37,19 +37,6 @@ strong {
   text-align: justify;
 }
 
-/* Texto centrado y justificado */
-.instructions-text,
-.instructions-text2 {
-  max-width: 5000px;
-  text-align: justify;
-}
-
-.instructions-text h2,
-.instructions-text2 h2 {
-  margin-top: 40px;  /* 👈 margen superior de 40px */
-  margin-bottom: 15px;
-  text-align: center;
-}
 
 /* Imagen */
 .instructions-img {
