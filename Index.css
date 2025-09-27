@@ -1,9 +1,3 @@
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fdf8c6;
-}
 
 main {
   text-align: center;
@@ -14,17 +8,6 @@ main {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  font-size: 50px;
-  text-align: center;
-  margin-top: 0;
-}
-h2 {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 0;  
-  margin: 2rem auto;
-}
 
 .introduccion{
   text-align: center;
@@ -36,13 +19,7 @@ h2 {
   text-align: center;
   margin-top: 30px;
 }
-h3 {
-  font-size: 25px;
-  text-align: center;
-  text-align: justify;
-  max-width: 1000px;
-  margin: 2rem auto;
-}
+
 
 .intro p {
   font-size: 25px;
@@ -50,13 +27,6 @@ h3 {
   margin-top: 0;
 }
 
-p {
-  font-size: 25px;
-  text-align: center;
-  text-align: justify;
-  max-width: 1000px;
-  margin: 2rem auto;
-}
 .banner {
   padding: 10px; /* espacio entre el degradado y la imagen */
   background: linear-gradient(180deg,#00ddffc5, #dfff9f, #fffd9e);
