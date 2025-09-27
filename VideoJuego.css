@@ -5,46 +5,47 @@ li, ol{
   text-align: justify;
   align-content: center;
 }
-/* Main */
-
-/* Secciones de instrucciones */
+/* Secciones de instrucciones en columna */
 .game-instructions2 {
   display: flex;
-  flex-direction: column;   /* 👈 texto arriba, imagen abajo */
+  flex-direction: column;   /* coloca texto e imagen en columna */
   align-items: center;      /* centra horizontalmente */
-  justify-content: center;  /* centra verticalmente */
-  gap: 10px;                /* espacio entre texto e imagen */
-  margin: 2rem auto;
-  padding: 2rem;
-  background: #fffd9e;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: justify;      /* justifica los párrafos */
+  gap: 20px;                /* espacio entre texto e imagen */
+  margin-bottom: 40px;
+  background-color: #fffd9e;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
-.game-instructions3{
-   display: flex;
-  flex-direction: column;   /* 👈 texto arriba, imagen abajo */
+.game-instructions3 {
+  display: flex;
+  flex-direction: column;   /* coloca texto e imagen en columna */
   align-items: center;      /* centra horizontalmente */
-  justify-content: center;  /* centra verticalmente */
-  gap: 10px;                /* espacio entre texto e imagen */
-  padding: 2rem;
-
+  text-align: justify;      /* justifica los párrafos */
+  gap: 20px;                /* espacio entre texto e imagen */
 }
+
+/* Ajuste del bloque de texto */
+.instructions-text {
+  max-width: 600px;         /* limita el ancho del texto */
+  width: 100%;
+}
+
+/* Imagen centrada y responsiva */
+.instructions-img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
 
 strong {
-   display: flex;
+  display: flex;
   font-size: 25px;
   text-align: justify;
-}
-
-
-/* Imagen */
-.instructions-img {
-  width: 900px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .Titulo h1 {
