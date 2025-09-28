@@ -14,7 +14,7 @@ li, ol{
   gap: 20px;                /* espacio entre texto e imagen */
   margin-bottom: 40px;
   background-color: #fffd9e;
-  padding: 25px;
+  padding: 5px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
@@ -29,13 +29,13 @@ li, ol{
 
 /* Ajuste del bloque de texto */
 .instructions-text {
-  max-width: 600px;         /* limita el ancho del texto */
+  max-width: 1000px;         /* limita el ancho del texto */
   width: 100%;
 }
 
 /* Imagen centrada y responsiva */
 .instructions-img {
-  max-width: 600px;
+  max-width: 1000px;
   width: 100%;
   border-radius: 12px;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
@@ -67,14 +67,18 @@ strong {
   justify-content: center;   /* centra las tarjetas */
   align-items: stretch;
  flex-direction: row;     /* evita que se estiren verticalmente */
-  gap: 30px;                 /* espacio entre tarjetas */
+  gap: 80px;                 /* espacio entre tarjetas */
   flex-wrap: wrap;           /* en pantallas pequeñas se apilan */
   margin-top: 40px;
+  background-color: #fffd9e;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
 .card {
   background-color: #00e6c5;
-  padding: 25px;
+  padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   width: 400px; /* tamaño de cada cuadro */
@@ -128,7 +132,7 @@ footer {
   color: #000000;
   text-align: center;
   padding: 1rem 0;
-  margin-top: 2rem;
+
 }
 
 /*.color1 {color: #00dfff;}
