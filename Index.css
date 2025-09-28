@@ -47,7 +47,7 @@ img {
 .molinos-grid {
   display: flex;
   justify-content: center;
-  gap: 90px;
+  gap: 300px;
   margin-top: 2rem;
 }
 
@@ -68,7 +68,7 @@ text-align: center;
   background: #77f7a4;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  width: 280px;
+  width: 380px;
   height: 330px;
   display: flex;
   flex-direction: column;
