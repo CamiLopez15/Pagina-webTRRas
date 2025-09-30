@@ -14,6 +14,7 @@ main {
   max-width: 1000px;
   margin: 2rem auto;
 }
+
 .Titulo h2 {
   font-size: 35px;
   text-align: center;
@@ -43,6 +44,7 @@ img {
   border-radius: 8px;
   margin-bottom: 1rem;
 }
+
 
 .molinos-grid {
   display: flex;
