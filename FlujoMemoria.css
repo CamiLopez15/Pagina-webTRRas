@@ -6,8 +6,14 @@
   max-width: 1050px;
   margin: 50px auto; /* centra horizontalmente si no usas flex del body */
 }
+.content h2{
+    font-size: 30px;
+    text-align: justify;
+    margin-top: 0;
+    margin: 2rem auto;
+}
 
-.content h4{
+.content h4 {
   color: #ff5e00;
 }
 main {
