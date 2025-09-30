@@ -4,7 +4,7 @@
   justify-content: center; /* centra vertical */
   align-items: center;     /* centra horizontal */
   max-width: 1050px;
-  margin: 0px auto; /* centra horizontalmente si no usas flex del body */
+  margin: 50px auto; /* centra horizontalmente si no usas flex del body */
 }
 
 .content h4{
