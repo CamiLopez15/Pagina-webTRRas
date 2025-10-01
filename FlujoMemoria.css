@@ -20,11 +20,9 @@ main {
   text-align: center;
   max-width: 1000px;
   margin: 2rem auto;
-  background: #fffd9e;
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .grid {
   display: flex;
@@ -97,4 +95,42 @@ footer {
   text-align: center;
   padding: 1rem 0;
   margin-top: 2rem;
+}
+
+
+#memoryGrid {
+  padding: 2rem;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  background: #fffdf0; /* el fondo interno */
+  overflow: hidden;
+}
+
+/* Animación del borde */
+#memoryGrid::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 18px;
+ background: linear-gradient(
+    45deg,
+    #00e6c5,
+    #00ff99,
+    #00899b,
+    #b5e94e,
+    #fdfb83
+  );
+  background-size: 600% 600%;
+  z-index: -1;
+  animation: borderFlow 8s linear infinite;
+}
+
+@keyframes borderFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
