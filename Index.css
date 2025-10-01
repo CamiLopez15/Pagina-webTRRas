@@ -44,6 +44,26 @@ img {
   max-width: 350px;
   border-radius: 8px;
   margin-bottom: 1rem;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+/* Efecto al pasar el mouse */
+.banner img:hover {
+  transform: scale(1.08) rotate(2deg); /* zoom suave con ligera rotación */
+  box-shadow: 0 0 25px rgba(115, 255, 0, 0.8),
+              0 0 50px rgba(0, 255, 255, 0.6);
+}
+
+/* Animación de "latido" */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Aplica el latido a todas las imágenes */
+.banner img {
+  animation: pulse 3s infinite;
 }
 
 
@@ -67,31 +87,87 @@ text-align: center;
   margin: 2rem auto;
 
 }
+
+/*Tarjetas de tipos*/
 .molino-card {
-  background: #77f7a4;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background: #77f7a4; /* fondo oscuro de la tarjeta */
+  border-radius: 16px;
   width: 380px;
   height: 330px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 15px;
-}
-
-.molino-card h3 {
-  margin: 0 0 10px 0;
-  font-size: 30px;
+  color: #fff;
   text-align: center;
-  color: #000000;
+  z-index: 1;
+  overflow: hidden;
 }
 
-.molino-card img {
-  width: 290px;
-  height: 290px;
-  justify-content: center;
-  border-radius: 8px;
+/* Borde luminoso solo alrededor */
+.molino-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px; /* grosor del borde */
+  border-radius: 16px;
+  background: linear-gradient(
+    45deg,
+    #00e6c5,
+    #00ff99,
+    #06ce4c,
+    #dfff9f,
+    #fffd9e
+  );
+   background-size: 400% 400%;
+  animation: glowingBorder 20s linear infinite;
+
+  /* Compatibilidad */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude; /* Firefox */
 }
+
+/* Animación de los colores */
+@keyframes glowingBorder {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* Imagen dentro */
+.molino-card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Título */
+.molino-card h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #000000;
+  z-index: 1;
+}
+
 footer {
   background: #00cfb0;
   color: #000000;
