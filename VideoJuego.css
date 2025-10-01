@@ -35,12 +35,42 @@ li, ol{
 }
 
 /* Imagen centrada y responsiva */
-.instructions-img {
+.game-instructions2 img {
   max-width: 1000px;
   width: 100%;
   border-radius: 12px;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  animation: pulse 3s infinite; /* 👈 animación automática */
 }
+
+/* Efecto al pasar el mouse */
+/* Animación de "latido" */
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Imagen centrada y responsiva */
+.game-instructions3 img {
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  animation: pulse 3s infinite; /* 👈 animación automática */
+}
+
+/* Efecto al pasar el mouse */
+/* Animación de "latido" */
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+
 
 
 strong {
@@ -78,36 +108,56 @@ strong {
 }
 
 .card {
-  background-color: #00e6c5;
+  position: relative;
+  width: 400px;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  width: 400px; /* tamaño de cada cuadro */
-  align-items: center;
-}
-.card ol{
-  margin: 0;                /* elimina márgenes externos que deforman */
-  padding-left: 20px;       /* deja espacio para los números */
-  text-align: left;         /* texto alineado a la izquierda */
-  list-style-position: outside; /* asegura que el número quede afuera */
-  line-height: 1.8;         /* más espacio entre líneas */
+  border-radius: 35px;
+  background: #00e6c5; /* 👈 fondo fijo */
+  overflow: hidden;
+  z-index: 0;
 }
 
-.resaltado {
-  font-weight: bold;
-  color: #3a2d1d; /* café oscuro, puedes cambiarlo */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 10px;
+  border-radius: 35px;
+  background: linear-gradient(
+    45deg,
+    #00e6c5,
+    #00ff99,
+    #06ce4c,
+    #dfff9f,
+    #fffd9e
+  );
+  background-size: 800% 800%;
+  animation: borderGlow 8s linear infinite;
+
+  /* Compatibilidad: WebKit + estándar */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+          mask-composite: exclude;
+
+  z-index: -1;
 }
 
-
-.card ol li {
-  margin-bottom: 8px;       /* separación entre ítems */
+/* Animación del borde de colores */
+@keyframes borderGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-
-card h3 {
-  margin-top: 0;
-  font-size: 24px;
-  text-align: center;
+/* Asegura que el contenido esté por encima */
+.card * {
+  position: relative;
+  z-index: 1;
 }
 
 .download-btn {
