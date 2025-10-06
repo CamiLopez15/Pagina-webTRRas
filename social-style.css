@@ -1,0 +1,61 @@
+/* social-styles.css */
+.social-buttons {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 9999;
+}
+
+.social-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  transform: scale(1.15) rotate(5deg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.facebook {
+  background: #1877f2;
+}
+
+.facebook:hover {
+  background: #145dbf;
+}
+
+.instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.instagram:hover {
+  background: linear-gradient(45deg, #d17b2c 0%, #c55a31 25%, #b91f35 50%, #a91d56 75%, #9a1470 100%);
+}
+
+@media (max-width: 768px) {
+  .social-buttons {
+    right: 15px;
+  }
+  
+  .social-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
