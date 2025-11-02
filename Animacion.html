@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Body.css">
     <link rel="stylesheet" href="social-style.css">
     <script src="social-buttons.js"></script>
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(document).ready(function () {
         // Cargar el header desde Header.html
@@ -23,14 +23,23 @@
     <div class="container">
         <h1>Animación Molino de mi abuela</h1>
         <div class="descripcion">
-            <p> Bienvenidos al inicio de nuestra animación transmedia. Aquí podrás ver una breve descripción y el video introductorio que muestra el concepto y la creatividad de la historia</p> 
+            <p>Bienvenidos al inicio de nuestra animación transmedia. Aquí podrás ver una breve descripción y el video introductorio que muestra el concepto y la creatividad de la historia.</p> 
         </div>
-        <video controls>
-            <source src="animacion.mp4" type="video/mp4">
-            Tu navegador no soporta el elemento de video.
-        </video>
+
+        <!-- Reemplazo del video local por un iframe de YouTube -->
+        <div class="video-container">
+            <iframe 
+                width="100%" 
+                height="700" 
+                src="https://www.youtube.com/embed/fxwx344z60s" 
+                title="Animación Molino de mi abuela"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
     </div>
+
     <footer>&copy; 2025 El molino de mi abuela. Todos los derechos reservados a María Camila López.</footer>
-  </body>
 </body>
 </html>
