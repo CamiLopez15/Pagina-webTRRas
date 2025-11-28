@@ -14,14 +14,20 @@
   text-align: center; /* centra el texto */
 }
 
-video {
-  display: block;
-  margin: 20px auto; /* centra el video y da espacio */
-  width: 80%; /* más grande y adaptable */
-  max-width: 900px; /* límite máximo */
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* sombra para resaltar */
+.video-container {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  margin: 20px auto;
 }
+
+.video-container iframe {
+  width: 60%;   /* tamaño más pequeño */
+  max-width: 700px;
+  height: 400px; /* ajusta la altura */
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 footer {
   background: #00cfb0;
